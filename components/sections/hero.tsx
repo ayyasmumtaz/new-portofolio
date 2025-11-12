@@ -110,7 +110,7 @@ export default function Hero() {
           </motion.p>
         </motion.div>
 
-        <motion.div className="flex-col content-center">
+        <motion.div className="flex-col content-center md:w-4xl">
           <motion.h1 variants={itemVariants} className="text-6xl md:text-8xl text-signature mb-8 leading-tight">
             <span className="line-accent">
               Software Deve{typedText}
