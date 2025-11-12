@@ -15,7 +15,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="#" className="text-2xl font-bold text-foreground">
-          William<span className="text-primary">.</span>
+          Ayyas <span className="text-primary">.</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
