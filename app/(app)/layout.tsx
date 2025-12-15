@@ -3,13 +3,14 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { Providers } from './providers'
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "William - Frontend Developer",
-  description: "Frontend web developer portfolio based in London",
+  title: "AyyasMumtaz - Software Developer",
+  description: "Software Developer based in Jakarta",
   generator: "v0.app",
   icons: {
     icon: [
@@ -42,7 +43,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`font-sans antialiased`}>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
         <Analytics />
       </body>
     </html>

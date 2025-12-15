@@ -105,7 +105,8 @@ export default function Hero() {
               />
             </div>
           </motion.div>
-          <motion.p variants={itemVariants} className="text-xl text-foreground font-medium tracking-wide">
+          <motion.p variants={itemVariants} className="text-xl text-primary font-medium tracking-wide"
+            style={{ fontFamily: "'Playfair Display', serif" }}>
             Hi! I'm Ayyas Mumtaz
           </motion.p>
         </motion.div>
