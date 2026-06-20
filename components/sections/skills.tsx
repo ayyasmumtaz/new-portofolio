@@ -44,7 +44,7 @@ export default function Skills() {
   }
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section id="skills" className="py-20 px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -118,9 +118,9 @@ export default function Skills() {
           className="p-8 bg-secondary rounded-lg border border-border text-center"
         >
           <h3 className="text-2xl font-bold text-foreground mb-3">Education</h3>
-          <p className="text-foreground/70 mb-2">Bachelor of Science in Computer Science</p>
-          <p className="text-primary font-medium">University of California</p>
-          <p className="text-sm text-foreground/60 mt-2">Graduated 2018</p>
+          <p className="text-foreground/70 mb-2">Bachelor of Computer Science</p>
+          <p className="text-primary font-medium">IPB University, Bogor, Indonesia</p>
+          <p className="text-sm text-foreground/60 mt-2">Graduated 2025</p>
         </motion.div>
       </div>
     </section>

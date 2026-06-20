@@ -1,6 +1,6 @@
 import Navigation from "@/components/navigation"
 import Hero from "@/components/sections/hero"
-import Projects from "@/components/sections/projects"
+// import Projects from "@/components/sections/projects"
 import Experience from "@/components/sections/experience"
 import Skills from "@/components/sections/skills"
 import Contact from "@/components/sections/contact"
@@ -10,7 +10,7 @@ export default function Home() {
     <main className="w-full bg-background relative overflow-hidden">
       <Navigation />
       <Hero />
-      <Projects />
+      {/* <Projects /> */}
       <Experience />
       <Skills />
       <Contact />

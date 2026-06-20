@@ -4,7 +4,20 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 
 export default function Navigation() {
-  const menuItems = ["Home", "About me", "Services", "My Work", "Contact me"]
+  const menuItems = [
+    { label: "Home", href: "#hero" },
+    { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Contact", href: "#contact" },
+  ]
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    const target = document.querySelector(href)
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
 
   return (
     <motion.nav
@@ -21,26 +34,31 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-8">
           {menuItems.map((item, index) => (
             <motion.a
-              key={item}
-              href="#"
+              key={item.label}
+              href={item.href}
+              onClick={(e) => handleScroll(e, item.href)}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
               className="text-sm text-foreground hover:text-primary transition-colors"
             >
-              {item}
+              {item.label}
             </motion.a>
           ))}
         </div>
 
-        <motion.button
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3 }}
-          className="px-6 py-2 border border-foreground text-foreground rounded-full hover:bg-foreground hover:text-background transition-colors text-sm font-medium"
         >
-          Contact →
-        </motion.button>
+          <a
+            href="mailto:yazmumtaz@gmail.com"
+            className="px-6 py-2 border border-foreground text-foreground rounded-full hover:bg-foreground hover:text-background transition-colors text-sm font-medium inline-block"
+          >
+            Contact →
+          </a>
+        </motion.div>
       </div>
     </motion.nav>
   )

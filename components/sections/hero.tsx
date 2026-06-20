@@ -49,7 +49,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Animated grid background */}
         <div className="absolute inset-0">
@@ -129,13 +129,16 @@ export default function Hero() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <motion.button
+            <motion.a
+              href="https://drive.google.com/uc?export=download&id=1gWh8WW8kUzIuHu7WKejht3bCZFp9LN2I"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 border-2 border-foreground text-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-colors "
+              className="px-8 py-3 border-2 border-foreground text-foreground rounded-full font-medium hover:bg-foreground hover:text-background transition-colors inline-block"
             >
               My resume ↓
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
       </motion.div>

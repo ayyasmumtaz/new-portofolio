@@ -203,8 +203,11 @@ export default function Experience() {
           >
             Professional Journey
           </motion.p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
-            Work Experience
+          <h2
+            className="text-4xl md:text-5xl font-bold text-foreground mb-3"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Work Experiences
           </h2>
           <p className="text-foreground/60 max-w-2xl mx-auto">
             My professional journey and the roles I've taken on
