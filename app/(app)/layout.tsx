@@ -9,25 +9,45 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AyyasMumtaz - Software Developer",
-  description: "Software Developer based in Jakarta",
-  generator: "v0.app",
+  title: {
+    default: "Ayyas Mumtaz Yudha — Software Developer Portfolio",
+    template: "%s | Ayyas Mumtaz Yudha",
+  },
+  description:
+    "Portfolio of Ayyas Mumtaz Yudha — a Software Developer based in Jakarta, Indonesia. Explore projects, skills, and experience in web development.",
+  keywords: [
+    "Ayyas Mumtaz Yudha",
+    "Software Developer",
+    "Portfolio",
+    "Web Developer",
+    "Jakarta",
+    "Indonesia",
+    "Frontend Developer",
+    "Full Stack Developer",
+  ],
+  authors: [{ name: "Ayyas Mumtaz Yudha" }],
+  creator: "Ayyas Mumtaz Yudha",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "website",
+    locale: "id_ID",
+    title: "Ayyas Mumtaz Yudha — Software Developer Portfolio",
+    description:
+      "Portfolio of Ayyas Mumtaz Yudha — a Software Developer based in Jakarta, Indonesia. Explore projects, skills, and experience.",
+    siteName: "Ayyas Mumtaz Yudha Portfolio",
+  },
+  twitter: {
+    card: "summary",
+    title: "Ayyas Mumtaz Yudha — Software Developer Portfolio",
+    description:
+      "Portfolio of Ayyas Mumtaz Yudha — a Software Developer based in Jakarta, Indonesia.",
+    creator: "@ayyasmumtaz",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
