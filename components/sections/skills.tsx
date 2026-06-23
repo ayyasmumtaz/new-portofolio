@@ -6,22 +6,37 @@ export default function Skills() {
   const skillCategories = [
     {
       category: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion"],
+      skills: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
     },
     {
       category: "Backend",
-      skills: ["Node.js", "Express", "PostgreSQL", "MongoDB", "REST APIs"],
+      skills: [
+        "Laravel",
+        "Node.js",
+        "Express.js",
+        "REST API"
+      ],
     },
     {
-      category: "Tools & Skills",
-      skills: ["Git", "Figma", "Testing", "Performance", "SEO"],
+      category: "Database & Infrastructure",
+      skills: [
+        "PostgreSQL",
+        "MySQL",
+        "Docker",
+        "GCP"
+      ],
     },
-  ]
+  ];
 
   const certificates = [
     { name: "Advanced React Patterns", issuer: "Frontend Masters", year: "2023" },
-    { name: "Web Performance Optimization", issuer: "Udacity", year: "2022" },
-    { name: "Full Stack Development", issuer: "Coursera", year: "2021" },
+    { name: "Web Performance Optimization", issuer: "Udacity", year: "2024" },
+    { name: "Full Stack Development", issuer: "Coursera", year: "2024" },
   ]
 
   const containerVariants = {
